@@ -1,0 +1,20 @@
+# Cloned upstream model repos -- reproduced by the git clone commands in LOG.md,
+# not vendored here.
+Depth-Anything-3/
+Pi3/
+vggt/
+MoGe/
+PromptDA/
+
+# Downloaded pretrained weights (~15 GB) and pip/conda build noise.
+hf_cache/
+__pycache__/
+*.pyc
+
+# Raw per-view predictions (~1.5 GB of npz). Regenerate with the run_*.py
+# scripts; the derived JSON reports and COMPARISON_TABLES.md ARE committed.
+output/**/predictions.npz
+output/**/depth_predictions.npz
+
+# Install/run stdout logs (large, full of pip progress bars).
+logs/

@@ -27,6 +27,36 @@ Extended data types (Phase 2):
 from pyhelios import Context
 from pyhelios.types import *
 
+def set_primitive_data(context, uuid, label, value):
+    """Dispatch to the correctly-typed setPrimitiveData* method based on value's Python type."""
+    if isinstance(value, bool):
+        context.setPrimitiveDataInt(uuid, label, int(value))
+    elif isinstance(value, int):
+        if value > 2**31 - 1 or value < -(2**31):
+            context.setPrimitiveDataUInt(uuid, label, value)
+        else:
+            context.setPrimitiveDataInt(uuid, label, value)
+    elif isinstance(value, float):
+        context.setPrimitiveDataFloat(uuid, label, value)
+    elif isinstance(value, str):
+        context.setPrimitiveDataString(uuid, label, value)
+    elif isinstance(value, vec2):
+        context.setPrimitiveDataVec2(uuid, label, value)
+    elif isinstance(value, vec3):
+        context.setPrimitiveDataVec3(uuid, label, value)
+    elif isinstance(value, vec4):
+        context.setPrimitiveDataVec4(uuid, label, value)
+    elif isinstance(value, int2):
+        context.setPrimitiveDataInt2(uuid, label, value)
+    elif isinstance(value, int3):
+        context.setPrimitiveDataInt3(uuid, label, value)
+    elif isinstance(value, int4):
+        context.setPrimitiveDataInt4(uuid, label, value)
+    elif isinstance(value, (list, tuple)) and len(value) == 3:
+        context.setPrimitiveDataVec3(uuid, label, vec3(*value))
+    else:
+        raise ValueError(f"Unsupported primitive data type: {type(value)}")
+
 def main():
     print("=== PyHelios Primitive Data Example ===")
     
@@ -47,25 +77,25 @@ def main():
         print("\n--- Setting Primitive Data ---")
         
         # Set integer data
-        context.setPrimitiveData(patch_uuid, "plant_age", 25)
+        set_primitive_data(context, patch_uuid, "plant_age", 25)
         print("Set plant_age (int): 25")
         
         # Set float data
-        context.setPrimitiveData(patch_uuid, "leaf_area", 12.5)
+        set_primitive_data(context, patch_uuid, "leaf_area", 12.5)
         print("Set leaf_area (float): 12.5")
         
         # Set string data
-        context.setPrimitiveData(patch_uuid, "species", "Quercus alba")
+        set_primitive_data(context, patch_uuid, "species", "Quercus alba")
         print("Set species (str): 'Quercus alba'")
         
         # Set vec3 data
         wind_direction = vec3(1.0, 0.5, 0.2)
-        context.setPrimitiveData(patch_uuid, "wind_direction", wind_direction)
+        set_primitive_data(context, patch_uuid, "wind_direction", wind_direction)
         print(f"Set wind_direction (vec3): {wind_direction}")
         
         # Set vec3 data using vec3 type
         soil_nutrients = vec3(2.1, 1.8, 3.2)
-        context.setPrimitiveData(patch_uuid, "soil_nutrients", soil_nutrients)
+        set_primitive_data(context, patch_uuid, "soil_nutrients", soil_nutrients)
         print(f"Set soil_nutrients (vec3): {soil_nutrients}")
         
         # === CHECKING DATA EXISTENCE ===
@@ -118,46 +148,46 @@ def main():
         print("\n--- Extended Data Types (Phase 2) ---")
         
         # Boolean data
-        context.setPrimitiveData(patch_uuid, "is_flowering", True)
-        context.setPrimitiveData(patch_uuid, "has_disease", False)
+        set_primitive_data(context, patch_uuid, "is_flowering", True)
+        set_primitive_data(context, patch_uuid, "has_disease", False)
         print("Set is_flowering (bool): True")
         print("Set has_disease (bool): False")
         
         # Unsigned integer (large positive values)
         large_id = 3000000000  # Exceeds signed int32 range
-        context.setPrimitiveData(patch_uuid, "global_id", large_id)
+        set_primitive_data(context, patch_uuid, "global_id", large_id)
         print(f"Set global_id (uint): {large_id}")
         
         # vec2 data
         uv_coords = vec2(0.5, 0.7)
-        context.setPrimitiveData(patch_uuid, "uv_coordinates", uv_coords)
+        set_primitive_data(context, patch_uuid, "uv_coordinates", uv_coords)
         print(f"Set uv_coordinates (vec2): {uv_coords}")
         
         # vec4 data
         rgba_color = vec4(0.8, 0.6, 0.4, 0.9)
-        context.setPrimitiveData(patch_uuid, "rgba_color", rgba_color)
+        set_primitive_data(context, patch_uuid, "rgba_color", rgba_color)
         print(f"Set rgba_color (vec4): {rgba_color}")
         
         # int2 data (screen coordinates)
         screen_pos = int2(640, 480)
-        context.setPrimitiveData(patch_uuid, "screen_position", screen_pos)
+        set_primitive_data(context, patch_uuid, "screen_position", screen_pos)
         print(f"Set screen_position (int2): {screen_pos}")
         
         # int3 data (voxel indices)
         voxel_index = int3(12, 8, 15)
-        context.setPrimitiveData(patch_uuid, "voxel_index", voxel_index)
+        set_primitive_data(context, patch_uuid, "voxel_index", voxel_index)
         print(f"Set voxel_index (int3): {voxel_index}")
         
         # int4 data (RGBA as integers)
         rgba_int = int4(255, 128, 64, 230)
-        context.setPrimitiveData(patch_uuid, "rgba_int", rgba_int)
+        set_primitive_data(context, patch_uuid, "rgba_int", rgba_int)
         print(f"Set rgba_int (int4): {rgba_int}")
         
         # Vector type examples
-        context.setPrimitiveData(patch_uuid, "size_2d", vec2(10.5, 15.2))
-        context.setPrimitiveData(patch_uuid, "grid_pos", int2(5, 7))
-        context.setPrimitiveData(patch_uuid, "transform", vec4(1.0, 0.0, 0.0, 1.0))
-        context.setPrimitiveData(patch_uuid, "indices", int4(100, 200, 300, 400))
+        set_primitive_data(context, patch_uuid, "size_2d", vec2(10.5, 15.2))
+        set_primitive_data(context, patch_uuid, "grid_pos", int2(5, 7))
+        set_primitive_data(context, patch_uuid, "transform", vec4(1.0, 0.0, 0.0, 1.0))
+        set_primitive_data(context, patch_uuid, "indices", int4(100, 200, 300, 400))
         print("Set size_2d (vec2): (10.5, 15.2)")
         print("Set grid_pos (int2): (5, 7)")
         print("Set transform (vec4): (1.0, 0.0, 0.0, 1.0)")
@@ -240,8 +270,8 @@ def main():
         print(f"Created sphere with first triangle UUID: {sphere_uuid}")
         
         # Add data to sphere
-        context.setPrimitiveData(sphere_uuid, "plant_age", 15)  # Different age
-        context.setPrimitiveData(sphere_uuid, "species", "Pinus sylvestris")  # Different species
+        set_primitive_data(context, sphere_uuid, "plant_age", 15)  # Different age
+        set_primitive_data(context, sphere_uuid, "species", "Pinus sylvestris")  # Different species
         
         # Compare data between primitives (using auto-detection)
         patch_species = context.getPrimitiveData(patch_uuid, "species")
@@ -261,7 +291,7 @@ def main():
         
         # Try to set unsupported data type
         try:
-            context.setPrimitiveData(patch_uuid, "bad_data", {"dict": "not_supported"})
+            set_primitive_data(context, patch_uuid, "bad_data", {"dict": "not_supported"})
         except ValueError as e:
             print(f"Expected error for unsupported type: {e}")
         
@@ -305,15 +335,15 @@ def demonstrate_advanced_usage():
             height = i * 0.1                # Varying heights
             
             # Store environmental data
-            context.setPrimitiveData(uuid, "light_level", light_level)
-            context.setPrimitiveData(uuid, "temperature", temperature) 
-            context.setPrimitiveData(uuid, "height", height)
-            context.setPrimitiveData(uuid, "patch_id", i)
+            set_primitive_data(context, uuid, "light_level", light_level)
+            set_primitive_data(context, uuid, "temperature", temperature) 
+            set_primitive_data(context, uuid, "height", height)
+            set_primitive_data(context, uuid, "patch_id", i)
             
             # Store position as vec3
             x, y = i % 3 * 2, i // 3 * 2
             position = [float(x), float(y), height]
-            context.setPrimitiveData(uuid, "position", position)
+            set_primitive_data(context, uuid, "position", position)
         
         # Analyze the canopy data
         print("\n--- Canopy Analysis ---")

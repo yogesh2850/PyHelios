@@ -1,0 +1,16 @@
+=== Test: optionalOutputObjectData BEFORE build ===
+order=before:True -- 6592 fruit prims, 32 fruit objects
+  listObjectData(obj 1755) = ['age', 'fruitID', 'phenology_stage', 'rank']
+  has plantID: False
+  has fruitID: True
+  has rank: True
+  has age: True
+  has phenology_stage: True
+=== Test: optionalOutputObjectData AFTER build ===
+order=before:False -- 6180 fruit prims, 30 fruit objects
+  listObjectData(obj 1259) = []
+  has plantID: False
+  has fruitID: False
+  has rank: False
+  has age: False
+  has phenology_stage: False

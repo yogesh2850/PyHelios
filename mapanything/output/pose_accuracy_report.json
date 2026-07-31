@@ -1,0 +1,40 @@
+{
+  "tree0_orbit16__images_only": {
+    "scene_name": "tree0_orbit16",
+    "conditioning": "images_only",
+    "method": "Umeyama similarity alignment of predicted camera centers onto real camera centers, then RMSE of aligned centers -- T7.2 condition B reasoning (own-frame reconstruction, absolute scale not directly comparable without alignment; recovered_scale_factor reported explicitly, not hidden)",
+    "n_views": 16,
+    "recovered_scale_factor": 8.750412177466682,
+    "camera_center_rmse_after_alignment_m": 4.6408893479412345,
+    "camera_center_rmse_after_alignment_mm": 4640.8893479412345
+  },
+  "tree0_orbit16__full": {
+    "scene_name": "tree0_orbit16",
+    "conditioning": "full",
+    "method": "direct RMSE (real poses given as conditioning, same world frame expected -- T7.2 condition C/D reasoning)",
+    "n_views": 16,
+    "camera_center_rmse_m": 0.06724301155405907,
+    "camera_center_rmse_mm": 67.24301155405907,
+    "rotation_error_deg_mean": 0.458035088174035,
+    "rotation_error_deg_max": 0.8080203824978883
+  },
+  "tree_t76_mvs_rig__images_only": {
+    "scene_name": "tree_t76_mvs_rig",
+    "conditioning": "images_only",
+    "method": "Umeyama similarity alignment of predicted camera centers onto real camera centers, then RMSE of aligned centers -- T7.2 condition B reasoning (own-frame reconstruction, absolute scale not directly comparable without alignment; recovered_scale_factor reported explicitly, not hidden)",
+    "n_views": 42,
+    "recovered_scale_factor": 2.7494020805854884,
+    "camera_center_rmse_after_alignment_m": 4.554566872907795,
+    "camera_center_rmse_after_alignment_mm": 4554.566872907795
+  },
+  "tree_t76_mvs_rig__full": {
+    "scene_name": "tree_t76_mvs_rig",
+    "conditioning": "full",
+    "method": "direct RMSE (real poses given as conditioning, same world frame expected -- T7.2 condition C/D reasoning)",
+    "n_views": 42,
+    "camera_center_rmse_m": 0.08778628480388743,
+    "camera_center_rmse_mm": 87.78628480388744,
+    "rotation_error_deg_mean": 0.463661418216487,
+    "rotation_error_deg_max": 1.1448564298665909
+  }
+}

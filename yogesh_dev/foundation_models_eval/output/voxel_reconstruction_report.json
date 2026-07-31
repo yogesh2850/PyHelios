@@ -1,0 +1,847 @@
+{
+  "per_model_conditioning": {
+    "da3_base__full": {
+      "model": "da3_base",
+      "conditioning": "full",
+      "was_given_real_extrinsics": true,
+      "frame_policy": "input_frame_preserved",
+      "recovered_scale_factor_applied": 1.0,
+      "by_resolution": {
+        "coarse_2cm": {
+          "voxel_size_m": 0.02,
+          "n_occupied_voxels_model": 477143,
+          "n_occupied_voxels_classical_t76": 54796,
+          "n_points_fused": 4539215,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 1.0,
+            "5-10mm": 0.9960212201591512,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 1.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          }
+        },
+        "fine_5mm": {
+          "voxel_size_m": 0.005,
+          "n_occupied_voxels_model": 1238877,
+          "n_occupied_voxels_classical_t76": 32941,
+          "n_points_fused": 4539215,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.9393939393939394,
+            "5-10mm": 0.7970822281167109,
+            "10-20mm": 0.8483606557377049,
+            ">20mm": 0.863013698630137
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 0.7272727272727273,
+            "5-10mm": 0.7599469496021221,
+            "10-20mm": 0.8811475409836066,
+            ">20mm": 0.678082191780822
+          }
+        }
+      },
+      "metric_scale_integrity": {
+        "canopy_volume": {
+          "ground_truth_bbox_m3": 13.207558042631295,
+          "reconstructed_occupied_voxel_volume_m3": 0.15485962500000003,
+          "relative_error": -0.9882749237595515
+        },
+        "fruit_diameter": {
+          "n_fruit_total": 33,
+          "n_fruit_used": 33,
+          "mean_absolute_relative_error": 0.2987734201100559
+        },
+        "internode_length": {
+          "n_segments_checked": 200,
+          "n_segments_snapped_both_ends": 169,
+          "ground_truth_mean_m": 0.0340789310119358,
+          "reconstructed_mean_m": 0.03606948862238365,
+          "relative_error": 0.05841021274260852
+        }
+      }
+    },
+    "da3_base__images_only": {
+      "model": "da3_base",
+      "conditioning": "images_only",
+      "was_given_real_extrinsics": false,
+      "frame_policy": "similarity_aligned",
+      "recovered_scale_factor_applied": 6.8965523980059515,
+      "by_resolution": {
+        "coarse_2cm": {
+          "voxel_size_m": 0.02,
+          "n_occupied_voxels_model": 0,
+          "n_occupied_voxels_classical_t76": 54796,
+          "n_points_fused": 1706219,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 0.0
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 1.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          }
+        },
+        "fine_5mm": {
+          "voxel_size_m": 0.005,
+          "n_occupied_voxels_model": 0,
+          "n_occupied_voxels_classical_t76": 32941,
+          "n_points_fused": 1706219,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 0.0
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 0.7272727272727273,
+            "5-10mm": 0.7599469496021221,
+            "10-20mm": 0.8811475409836066,
+            ">20mm": 0.678082191780822
+          }
+        }
+      },
+      "metric_scale_integrity": {
+        "canopy_volume": {
+          "ground_truth_bbox_m3": 13.207558042631295,
+          "reconstructed_occupied_voxel_volume_m3": 0.0,
+          "relative_error": -1.0
+        },
+        "fruit_diameter": {
+          "n_fruit_total": 33,
+          "n_fruit_used": 0,
+          "mean_absolute_relative_error": null
+        },
+        "internode_length": {
+          "n_segments_checked": 200,
+          "n_segments_snapped_both_ends": 0,
+          "ground_truth_mean_m": 0.0340789310119358,
+          "reconstructed_mean_m": null,
+          "relative_error": null
+        }
+      }
+    },
+    "da3_base__images_only_ray": {
+      "model": "da3_base",
+      "conditioning": "images_only_ray",
+      "was_given_real_extrinsics": false,
+      "frame_policy": "similarity_aligned",
+      "recovered_scale_factor_applied": 7.156563392037299,
+      "by_resolution": {
+        "coarse_2cm": {
+          "voxel_size_m": 0.02,
+          "n_occupied_voxels_model": 0,
+          "n_occupied_voxels_classical_t76": 54796,
+          "n_points_fused": 1706219,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 0.0
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 1.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          }
+        },
+        "fine_5mm": {
+          "voxel_size_m": 0.005,
+          "n_occupied_voxels_model": 0,
+          "n_occupied_voxels_classical_t76": 32941,
+          "n_points_fused": 1706219,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 0.0
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 0.7272727272727273,
+            "5-10mm": 0.7599469496021221,
+            "10-20mm": 0.8811475409836066,
+            ">20mm": 0.678082191780822
+          }
+        }
+      },
+      "metric_scale_integrity": {
+        "canopy_volume": {
+          "ground_truth_bbox_m3": 13.207558042631295,
+          "reconstructed_occupied_voxel_volume_m3": 0.0,
+          "relative_error": -1.0
+        },
+        "fruit_diameter": {
+          "n_fruit_total": 33,
+          "n_fruit_used": 0,
+          "mean_absolute_relative_error": null
+        },
+        "internode_length": {
+          "n_segments_checked": 200,
+          "n_segments_snapped_both_ends": 0,
+          "ground_truth_mean_m": 0.0340789310119358,
+          "reconstructed_mean_m": null,
+          "relative_error": null
+        }
+      }
+    },
+    "da3_large11__full": {
+      "model": "da3_large11",
+      "conditioning": "full",
+      "was_given_real_extrinsics": true,
+      "frame_policy": "input_frame_preserved",
+      "recovered_scale_factor_applied": 1.0,
+      "by_resolution": {
+        "coarse_2cm": {
+          "voxel_size_m": 0.02,
+          "n_occupied_voxels_model": 633286,
+          "n_occupied_voxels_classical_t76": 54796,
+          "n_points_fused": 4303441,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 1.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 0.9931506849315068
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 1.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          }
+        },
+        "fine_5mm": {
+          "voxel_size_m": 0.005,
+          "n_occupied_voxels_model": 1765992,
+          "n_occupied_voxels_classical_t76": 32941,
+          "n_points_fused": 4303441,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.8484848484848485,
+            "5-10mm": 0.8607427055702918,
+            "10-20mm": 0.930327868852459,
+            ">20mm": 0.7397260273972602
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 0.7272727272727273,
+            "5-10mm": 0.7599469496021221,
+            "10-20mm": 0.8811475409836066,
+            ">20mm": 0.678082191780822
+          }
+        }
+      },
+      "metric_scale_integrity": {
+        "canopy_volume": {
+          "ground_truth_bbox_m3": 13.207558042631295,
+          "reconstructed_occupied_voxel_volume_m3": 0.22074900000000003,
+          "relative_error": -0.9832861609021541
+        },
+        "fruit_diameter": {
+          "n_fruit_total": 33,
+          "n_fruit_used": 33,
+          "mean_absolute_relative_error": 0.2989592537202767
+        },
+        "internode_length": {
+          "n_segments_checked": 200,
+          "n_segments_snapped_both_ends": 166,
+          "ground_truth_mean_m": 0.0340789310119358,
+          "reconstructed_mean_m": 0.03631512780698468,
+          "relative_error": 0.06561816138732986
+        }
+      }
+    },
+    "da3_large11__images_only": {
+      "model": "da3_large11",
+      "conditioning": "images_only",
+      "was_given_real_extrinsics": false,
+      "frame_policy": "similarity_aligned",
+      "recovered_scale_factor_applied": 6.640284647326942,
+      "by_resolution": {
+        "coarse_2cm": {
+          "voxel_size_m": 0.02,
+          "n_occupied_voxels_model": 100533,
+          "n_occupied_voxels_classical_t76": 54796,
+          "n_points_fused": 947006,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.36363636363636365,
+            "5-10mm": 0.1830238726790451,
+            "10-20mm": 0.36885245901639346,
+            ">20mm": 0.3150684931506849
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 1.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          }
+        },
+        "fine_5mm": {
+          "voxel_size_m": 0.005,
+          "n_occupied_voxels_model": 271026,
+          "n_occupied_voxels_classical_t76": 32941,
+          "n_points_fused": 947006,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.12121212121212122,
+            "5-10mm": 0.04509283819628647,
+            "10-20mm": 0.1557377049180328,
+            ">20mm": 0.07534246575342465
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 0.7272727272727273,
+            "5-10mm": 0.7599469496021221,
+            "10-20mm": 0.8811475409836066,
+            ">20mm": 0.678082191780822
+          }
+        }
+      },
+      "metric_scale_integrity": {
+        "canopy_volume": {
+          "ground_truth_bbox_m3": 13.207558042631295,
+          "reconstructed_occupied_voxel_volume_m3": 0.033878250000000006,
+          "relative_error": -0.997434934611633
+        },
+        "fruit_diameter": {
+          "n_fruit_total": 33,
+          "n_fruit_used": 13,
+          "mean_absolute_relative_error": 0.29050636693971726
+        },
+        "internode_length": {
+          "n_segments_checked": 200,
+          "n_segments_snapped_both_ends": 6,
+          "ground_truth_mean_m": 0.0340789310119358,
+          "reconstructed_mean_m": 0.03181491022585087,
+          "relative_error": -0.06643461865901784
+        }
+      }
+    },
+    "da3_large11__images_only_ray": {
+      "model": "da3_large11",
+      "conditioning": "images_only_ray",
+      "was_given_real_extrinsics": false,
+      "frame_policy": "similarity_aligned",
+      "recovered_scale_factor_applied": 6.896162557657319,
+      "by_resolution": {
+        "coarse_2cm": {
+          "voxel_size_m": 0.02,
+          "n_occupied_voxels_model": 82803,
+          "n_occupied_voxels_classical_t76": 54796,
+          "n_points_fused": 947006,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.3333333333333333,
+            "5-10mm": 0.1896551724137931,
+            "10-20mm": 0.29918032786885246,
+            ">20mm": 0.3287671232876712
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 1.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          }
+        },
+        "fine_5mm": {
+          "voxel_size_m": 0.005,
+          "n_occupied_voxels_model": 203628,
+          "n_occupied_voxels_classical_t76": 32941,
+          "n_points_fused": 947006,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.12121212121212122,
+            "5-10mm": 0.04376657824933687,
+            "10-20mm": 0.10245901639344263,
+            ">20mm": 0.1232876712328767
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 0.7272727272727273,
+            "5-10mm": 0.7599469496021221,
+            "10-20mm": 0.8811475409836066,
+            ">20mm": 0.678082191780822
+          }
+        }
+      },
+      "metric_scale_integrity": {
+        "canopy_volume": {
+          "ground_truth_bbox_m3": 13.207558042631295,
+          "reconstructed_occupied_voxel_volume_m3": 0.025453500000000004,
+          "relative_error": -0.9980728080150895
+        },
+        "fruit_diameter": {
+          "n_fruit_total": 33,
+          "n_fruit_used": 13,
+          "mean_absolute_relative_error": 0.2876815085413842
+        },
+        "internode_length": {
+          "n_segments_checked": 200,
+          "n_segments_snapped_both_ends": 5,
+          "ground_truth_mean_m": 0.0340789310119358,
+          "reconstructed_mean_m": 0.03290296083606546,
+          "relative_error": -0.03450724952195437
+        }
+      }
+    },
+    "pi3x__full": {
+      "model": "pi3x",
+      "conditioning": "full",
+      "was_given_real_extrinsics": true,
+      "frame_policy": "similarity_aligned",
+      "recovered_scale_factor_applied": 2.929956608744967,
+      "by_resolution": {
+        "coarse_2cm": {
+          "voxel_size_m": 0.02,
+          "n_occupied_voxels_model": 25339,
+          "n_occupied_voxels_classical_t76": 54796,
+          "n_points_fused": 826125,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.15151515151515152,
+            "5-10mm": 0.08090185676392574,
+            "10-20mm": 0.1680327868852459,
+            ">20mm": 0.1232876712328767
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 1.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          }
+        },
+        "fine_5mm": {
+          "voxel_size_m": 0.005,
+          "n_occupied_voxels_model": 35912,
+          "n_occupied_voxels_classical_t76": 32941,
+          "n_points_fused": 826125,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.06060606060606061,
+            "5-10mm": 0.010610079575596816,
+            "10-20mm": 0.036885245901639344,
+            ">20mm": 0.0136986301369863
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 0.7272727272727273,
+            "5-10mm": 0.7599469496021221,
+            "10-20mm": 0.8811475409836066,
+            ">20mm": 0.678082191780822
+          }
+        }
+      },
+      "metric_scale_integrity": {
+        "canopy_volume": {
+          "ground_truth_bbox_m3": 13.207558042631295,
+          "reconstructed_occupied_voxel_volume_m3": 0.004489000000000001,
+          "relative_error": -0.9996601188512282
+        },
+        "fruit_diameter": {
+          "n_fruit_total": 33,
+          "n_fruit_used": 5,
+          "mean_absolute_relative_error": 0.2728781282655356
+        },
+        "internode_length": {
+          "n_segments_checked": 200,
+          "n_segments_snapped_both_ends": 2,
+          "ground_truth_mean_m": 0.0340789310119358,
+          "reconstructed_mean_m": 0.010606601717798222,
+          "relative_error": -0.6887636612168565
+        }
+      }
+    },
+    "pi3x__images_only": {
+      "model": "pi3x",
+      "conditioning": "images_only",
+      "was_given_real_extrinsics": false,
+      "frame_policy": "similarity_aligned",
+      "recovered_scale_factor_applied": 3.2697744506281734,
+      "by_resolution": {
+        "coarse_2cm": {
+          "voxel_size_m": 0.02,
+          "n_occupied_voxels_model": 0,
+          "n_occupied_voxels_classical_t76": 54796,
+          "n_points_fused": 758837,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 0.0
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 1.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          }
+        },
+        "fine_5mm": {
+          "voxel_size_m": 0.005,
+          "n_occupied_voxels_model": 0,
+          "n_occupied_voxels_classical_t76": 32941,
+          "n_points_fused": 758837,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 0.0
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 0.7272727272727273,
+            "5-10mm": 0.7599469496021221,
+            "10-20mm": 0.8811475409836066,
+            ">20mm": 0.678082191780822
+          }
+        }
+      },
+      "metric_scale_integrity": {
+        "canopy_volume": {
+          "ground_truth_bbox_m3": 13.207558042631295,
+          "reconstructed_occupied_voxel_volume_m3": 0.0,
+          "relative_error": -1.0
+        },
+        "fruit_diameter": {
+          "n_fruit_total": 33,
+          "n_fruit_used": 0,
+          "mean_absolute_relative_error": null
+        },
+        "internode_length": {
+          "n_segments_checked": 200,
+          "n_segments_snapped_both_ends": 0,
+          "ground_truth_mean_m": 0.0340789310119358,
+          "reconstructed_mean_m": null,
+          "relative_error": null
+        }
+      }
+    },
+    "pi3x__pose_intrinsics": {
+      "model": "pi3x",
+      "conditioning": "pose_intrinsics",
+      "was_given_real_extrinsics": true,
+      "frame_policy": "similarity_aligned",
+      "recovered_scale_factor_applied": 2.165934070889821,
+      "by_resolution": {
+        "coarse_2cm": {
+          "voxel_size_m": 0.02,
+          "n_occupied_voxels_model": 215776,
+          "n_occupied_voxels_classical_t76": 54796,
+          "n_points_fused": 879070,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.9393939393939394,
+            "5-10mm": 0.9005305039787799,
+            "10-20mm": 0.9918032786885246,
+            ">20mm": 0.9041095890410958
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 1.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          }
+        },
+        "fine_5mm": {
+          "voxel_size_m": 0.005,
+          "n_occupied_voxels_model": 849545,
+          "n_occupied_voxels_classical_t76": 32941,
+          "n_points_fused": 879070,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.7575757575757576,
+            "5-10mm": 0.5729442970822282,
+            "10-20mm": 0.7131147540983607,
+            ">20mm": 0.541095890410959
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 0.7272727272727273,
+            "5-10mm": 0.7599469496021221,
+            "10-20mm": 0.8811475409836066,
+            ">20mm": 0.678082191780822
+          }
+        }
+      },
+      "metric_scale_integrity": {
+        "canopy_volume": {
+          "ground_truth_bbox_m3": 13.207558042631295,
+          "reconstructed_occupied_voxel_volume_m3": 0.10619312500000001,
+          "relative_error": -0.9919596700118802
+        },
+        "fruit_diameter": {
+          "n_fruit_total": 33,
+          "n_fruit_used": 32,
+          "mean_absolute_relative_error": 0.29708098002709915
+        },
+        "internode_length": {
+          "n_segments_checked": 200,
+          "n_segments_snapped_both_ends": 104,
+          "ground_truth_mean_m": 0.0340789310119358,
+          "reconstructed_mean_m": 0.036008101081368794,
+          "relative_error": 0.05660887862818592
+        }
+      }
+    },
+    "vggt_1b__images_only": {
+      "model": "vggt_1b",
+      "conditioning": "images_only",
+      "was_given_real_extrinsics": false,
+      "frame_policy": "similarity_aligned",
+      "recovered_scale_factor_applied": 5.160059253065307,
+      "by_resolution": {
+        "coarse_2cm": {
+          "voxel_size_m": 0.02,
+          "n_occupied_voxels_model": 68878,
+          "n_occupied_voxels_classical_t76": 54796,
+          "n_points_fused": 442776,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.3333333333333333,
+            "5-10mm": 0.47745358090185674,
+            "10-20mm": 0.47950819672131145,
+            ">20mm": 0.4931506849315068
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 1.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          }
+        },
+        "fine_5mm": {
+          "voxel_size_m": 0.005,
+          "n_occupied_voxels_model": 419207,
+          "n_occupied_voxels_classical_t76": 32941,
+          "n_points_fused": 442776,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.18181818181818182,
+            "5-10mm": 0.2838196286472148,
+            "10-20mm": 0.28688524590163933,
+            ">20mm": 0.3082191780821918
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 0.7272727272727273,
+            "5-10mm": 0.7599469496021221,
+            "10-20mm": 0.8811475409836066,
+            ">20mm": 0.678082191780822
+          }
+        }
+      },
+      "metric_scale_integrity": {
+        "canopy_volume": {
+          "ground_truth_bbox_m3": 13.207558042631295,
+          "reconstructed_occupied_voxel_volume_m3": 0.052400875000000006,
+          "relative_error": -0.9960325084447208
+        },
+        "fruit_diameter": {
+          "n_fruit_total": 33,
+          "n_fruit_used": 15,
+          "mean_absolute_relative_error": 0.2845722425604208
+        },
+        "internode_length": {
+          "n_segments_checked": 200,
+          "n_segments_snapped_both_ends": 47,
+          "ground_truth_mean_m": 0.0340789310119358,
+          "reconstructed_mean_m": 0.033902038886890154,
+          "relative_error": -0.005190659442448201
+        }
+      }
+    },
+    "vggt_1b__images_only_laxconf": {
+      "model": "vggt_1b",
+      "conditioning": "images_only_laxconf",
+      "was_given_real_extrinsics": false,
+      "frame_policy": "similarity_aligned",
+      "recovered_scale_factor_applied": 5.160104859644918,
+      "by_resolution": {
+        "coarse_2cm": {
+          "voxel_size_m": 0.02,
+          "n_occupied_voxels_model": 162056,
+          "n_occupied_voxels_classical_t76": 54796,
+          "n_points_fused": 1185573,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 0.0,
+            "10-20mm": 0.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.8484848484848485,
+            "5-10mm": 0.7984084880636605,
+            "10-20mm": 0.8975409836065574,
+            ">20mm": 0.8767123287671232
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 1.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          }
+        },
+        "fine_5mm": {
+          "voxel_size_m": 0.005,
+          "n_occupied_voxels_model": 988137,
+          "n_occupied_voxels_classical_t76": 32941,
+          "n_points_fused": 1185573,
+          "theoretical_geometric_recall_one_voxel": {
+            "<5mm": 0.0,
+            "5-10mm": 1.0,
+            "10-20mm": 1.0,
+            ">20mm": 1.0
+          },
+          "empirical_reconstruction_recall_model": {
+            "<5mm": 0.5151515151515151,
+            "5-10mm": 0.5225464190981433,
+            "10-20mm": 0.610655737704918,
+            ">20mm": 0.636986301369863
+          },
+          "empirical_reconstruction_recall_classical_t76": {
+            "<5mm": 0.7272727272727273,
+            "5-10mm": 0.7599469496021221,
+            "10-20mm": 0.8811475409836066,
+            ">20mm": 0.678082191780822
+          }
+        }
+      },
+      "metric_scale_integrity": {
+        "canopy_volume": {
+          "ground_truth_bbox_m3": 13.207558042631295,
+          "reconstructed_occupied_voxel_volume_m3": 0.12351712500000002,
+          "relative_error": -0.9906479968059719
+        },
+        "fruit_diameter": {
+          "n_fruit_total": 33,
+          "n_fruit_used": 25,
+          "mean_absolute_relative_error": 0.29223280980409444
+        },
+        "internode_length": {
+          "n_segments_checked": 200,
+          "n_segments_snapped_both_ends": 96,
+          "ground_truth_mean_m": 0.0340789310119358,
+          "reconstructed_mean_m": 0.03534729697185545,
+          "relative_error": 0.037218478463289205
+        }
+      }
+    }
+  },
+  "phase7_classical_baseline": {
+    "branch_recovery_rate_fine_grid_classical_t76": 0.5420560747663551,
+    "fruit_recovery_rate_fine_grid_classical_t76": 1.0,
+    "fruit_diameter_mean_abs_rel_err_classical_t77": 0.22450420505465235,
+    "internode_length_rel_err_classical_t77": 0.11242804938623688,
+    "caveat": "T7.6's classical baseline used real log-odds probabilistic depth fusion with free-space carving (phase4/occupancy_map.py); this script uses plain point-cloud voxelization of each model's mask-valid predicted points -- a simpler, weaker, and much denser fusion step on the model side, stated explicitly so a recall difference is not misread as purely a foundation-model difference."
+  }
+}

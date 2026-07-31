@@ -1,0 +1,45 @@
+{
+  "model": "promptda_vitl",
+  "model_hf_id": "depth-anything/prompt-depth-anything-vitl",
+  "scene_name": "tree0_orbit16",
+  "conditioning": "prompt_sparse_clean",
+  "n_views": 16,
+  "device": "cuda",
+  "model_load_s": 40.193352699279785,
+  "infer_s": 0.5090043544769287,
+  "infer_s_per_view": 0.031812772154808044,
+  "pred_hw": [
+    350,
+    476
+  ],
+  "prompt_hw": [
+    87,
+    119
+  ],
+  "prompt_downscale": 4,
+  "noise_injected": false,
+  "noise_model_source": "yogesh_dev/phase1/noise_model.py:apply_rgbd_noise_model (Phase 1's real RGB-D noise model: mixed/flying pixels at depth discontinuities + range-dependent sigma(z)=0.0015*z^2), imported and called directly, seed=0, applied at full resolution BEFORE low-res readout",
+  "img_hw_original": [
+    360,
+    480
+  ],
+  "frame_names": [
+    "frame_00000",
+    "frame_00001",
+    "frame_00002",
+    "frame_00003",
+    "frame_00004",
+    "frame_00005",
+    "frame_00006",
+    "frame_00007",
+    "frame_00008",
+    "frame_00009",
+    "frame_00010",
+    "frame_00011",
+    "frame_00012",
+    "frame_00013",
+    "frame_00014",
+    "frame_00015"
+  ],
+  "valid_pixel_fraction": 0.06017857142857143
+}

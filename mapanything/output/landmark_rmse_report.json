@@ -1,0 +1,37 @@
+{
+  "per_conditioning": {
+    "images_only": {
+      "scene_name": "tree_t76_mvs_rig",
+      "conditioning": "images_only",
+      "n_landmarks_total": 1210,
+      "n_landmarks_with_any_valid_observation": 1209,
+      "n_valid_landmark_view_observations": 36261,
+      "rmse_m": 13.872020285567608,
+      "rmse_mm": 13872.020285567607,
+      "median_error_mm": 13790.196364706373,
+      "recovered_scale_factor": 2.7494020805854884
+    },
+    "full": {
+      "scene_name": "tree_t76_mvs_rig",
+      "conditioning": "full",
+      "n_landmarks_total": 1210,
+      "n_landmarks_with_any_valid_observation": 1210,
+      "n_valid_landmark_view_observations": 47882,
+      "rmse_m": 0.3988343533766882,
+      "rmse_mm": 398.8343533766882,
+      "median_error_mm": 232.67432387866754,
+      "recovered_scale_factor": null
+    }
+  },
+  "vs_phase7_t72": {
+    "mapanything": {
+      "images_only_rmse_mm": 13872.020285567607,
+      "full_conditioning_rmse_mm": 398.8343533766882
+    },
+    "phase7_classical_proxy_t72": {
+      "A_images_only_rmse_mm": 74.41804134049153,
+      "C_intrinsics_extrinsics_rmse_mm": 4.645100644237657
+    },
+    "caveat": "Different rig (Phase 7's T7.2 used its own 8-view/180deg-arc rig with a different real tree instance and different landmark set; this run uses T7.6's 42-view rig/tree) and different reconstruction paradigm (T7.2's proxy is sparse classical multi-view triangulation of exactly these landmarks; MapAnything is dense feed-forward pointmap prediction sampled at landmark projections) -- NOT a literal same-scene/same-points comparison. It IS a real comparison on the same conditioning-level axis (images-only vs full known-extrinsics+depth) and the same accuracy metric (3D landmark RMSE in mm) against the same category of real Helios branch/fruit ground truth."
+  }
+}

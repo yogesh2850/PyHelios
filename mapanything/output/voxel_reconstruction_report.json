@@ -1,0 +1,157 @@
+{
+  "full": {
+    "conditioning": "full",
+    "recovered_scale_factor_applied": 1.0,
+    "by_resolution": {
+      "coarse_2cm": {
+        "voxel_size_m": 0.02,
+        "n_occupied_voxels_mapanything": 239936,
+        "n_occupied_voxels_classical_t76": 54796,
+        "n_points_fused": 773117,
+        "theoretical_geometric_recall_one_voxel": {
+          "<5mm": 0.0,
+          "5-10mm": 0.0,
+          "10-20mm": 0.0,
+          ">20mm": 1.0
+        },
+        "empirical_reconstruction_recall_mapanything": {
+          "<5mm": 1.0,
+          "5-10mm": 1.0,
+          "10-20mm": 1.0,
+          ">20mm": 1.0
+        },
+        "empirical_reconstruction_recall_classical_t76": {
+          "<5mm": 1.0,
+          "5-10mm": 1.0,
+          "10-20mm": 1.0,
+          ">20mm": 1.0
+        }
+      },
+      "fine_5mm": {
+        "voxel_size_m": 0.005,
+        "n_occupied_voxels_mapanything": 755220,
+        "n_occupied_voxels_classical_t76": 32941,
+        "n_points_fused": 773117,
+        "theoretical_geometric_recall_one_voxel": {
+          "<5mm": 0.0,
+          "5-10mm": 1.0,
+          "10-20mm": 1.0,
+          ">20mm": 1.0
+        },
+        "empirical_reconstruction_recall_mapanything": {
+          "<5mm": 1.0,
+          "5-10mm": 0.8527851458885941,
+          "10-20mm": 0.8770491803278688,
+          ">20mm": 0.958904109589041
+        },
+        "empirical_reconstruction_recall_classical_t76": {
+          "<5mm": 0.7272727272727273,
+          "5-10mm": 0.7599469496021221,
+          "10-20mm": 0.8811475409836066,
+          ">20mm": 0.678082191780822
+        }
+      }
+    },
+    "metric_scale_integrity": {
+      "canopy_volume": {
+        "ground_truth_bbox_m3": 13.207558042631295,
+        "reconstructed_occupied_voxel_volume_m3": 0.09440250000000001,
+        "relative_error": -0.9928523880269701
+      },
+      "fruit_diameter": {
+        "n_fruit_total": 33,
+        "n_fruit_used": 33,
+        "mean_gt_diameter_m": 0.09735281901539268,
+        "mean_absolute_relative_error": 0.2987380556928832
+      },
+      "internode_length": {
+        "n_segments_checked": 200,
+        "n_segments_snapped_both_ends": 163,
+        "ground_truth_mean_m": 0.0340789310119358,
+        "reconstructed_mean_m": 0.03590505451201075,
+        "relative_error": 0.05358511684053034
+      }
+    }
+  },
+  "images_only": {
+    "conditioning": "images_only",
+    "recovered_scale_factor_applied": 2.7494020805854884,
+    "by_resolution": {
+      "coarse_2cm": {
+        "voxel_size_m": 0.02,
+        "n_occupied_voxels_mapanything": 0,
+        "n_occupied_voxels_classical_t76": 54796,
+        "n_points_fused": 1809267,
+        "theoretical_geometric_recall_one_voxel": {
+          "<5mm": 0.0,
+          "5-10mm": 0.0,
+          "10-20mm": 0.0,
+          ">20mm": 1.0
+        },
+        "empirical_reconstruction_recall_mapanything": {
+          "<5mm": 0.0,
+          "5-10mm": 0.0,
+          "10-20mm": 0.0,
+          ">20mm": 0.0
+        },
+        "empirical_reconstruction_recall_classical_t76": {
+          "<5mm": 1.0,
+          "5-10mm": 1.0,
+          "10-20mm": 1.0,
+          ">20mm": 1.0
+        }
+      },
+      "fine_5mm": {
+        "voxel_size_m": 0.005,
+        "n_occupied_voxels_mapanything": 0,
+        "n_occupied_voxels_classical_t76": 32941,
+        "n_points_fused": 1809267,
+        "theoretical_geometric_recall_one_voxel": {
+          "<5mm": 0.0,
+          "5-10mm": 1.0,
+          "10-20mm": 1.0,
+          ">20mm": 1.0
+        },
+        "empirical_reconstruction_recall_mapanything": {
+          "<5mm": 0.0,
+          "5-10mm": 0.0,
+          "10-20mm": 0.0,
+          ">20mm": 0.0
+        },
+        "empirical_reconstruction_recall_classical_t76": {
+          "<5mm": 0.7272727272727273,
+          "5-10mm": 0.7599469496021221,
+          "10-20mm": 0.8811475409836066,
+          ">20mm": 0.678082191780822
+        }
+      }
+    },
+    "metric_scale_integrity": {
+      "canopy_volume": {
+        "ground_truth_bbox_m3": 13.207558042631295,
+        "reconstructed_occupied_voxel_volume_m3": 0.0,
+        "relative_error": -1.0
+      },
+      "fruit_diameter": {
+        "n_fruit_total": 33,
+        "n_fruit_used": 0,
+        "mean_gt_diameter_m": 0.09735281901539268,
+        "mean_absolute_relative_error": null
+      },
+      "internode_length": {
+        "n_segments_checked": 200,
+        "n_segments_snapped_both_ends": 0,
+        "ground_truth_mean_m": 0.0340789310119358,
+        "reconstructed_mean_m": null,
+        "relative_error": null
+      }
+    }
+  },
+  "vs_phase7_t76_t77_classical_baseline": {
+    "branch_recovery_rate_fine_grid_classical_t76": 0.5420560747663551,
+    "fruit_recovery_rate_fine_grid_classical_t76": 1.0,
+    "fruit_diameter_mean_abs_rel_err_classical_t77": 0.22450420505465235,
+    "internode_length_rel_err_classical_t77": 0.11242804938623688,
+    "caveat": "T7.6's classical baseline used real log-odds probabilistic depth fusion with free-space carving (phase4/occupancy_map.py); this script uses plain point-cloud voxelization of MapAnything's mask-valid predicted points (no free-space carving/multi-view consistency accumulation) -- a simpler, weaker fusion step on the MapAnything side, stated explicitly so a lower MapAnything recall number is not misread as purely a foundation-model shortfall."
+  }
+}

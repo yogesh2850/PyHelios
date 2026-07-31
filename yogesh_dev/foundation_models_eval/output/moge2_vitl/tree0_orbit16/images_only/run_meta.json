@@ -1,0 +1,41 @@
+{
+  "model": "moge2_vitl",
+  "model_hf_id": "Ruicheng/moge-2-vitl-normal",
+  "scene_name": "tree0_orbit16",
+  "conditioning": "images_only",
+  "n_views": 16,
+  "device": "cuda",
+  "model_load_s": 40.35764145851135,
+  "infer_s": 0.9538214206695557,
+  "infer_s_per_view": 0.05961383879184723,
+  "pred_hw": [
+    360,
+    480
+  ],
+  "img_hw_original": [
+    360,
+    480
+  ],
+  "fov_x_deg_real": 57.82240164409225,
+  "fov_x_supplied": false,
+  "frame_names": [
+    "frame_00000",
+    "frame_00001",
+    "frame_00002",
+    "frame_00003",
+    "frame_00004",
+    "frame_00005",
+    "frame_00006",
+    "frame_00007",
+    "frame_00008",
+    "frame_00009",
+    "frame_00010",
+    "frame_00011",
+    "frame_00012",
+    "frame_00013",
+    "frame_00014",
+    "frame_00015"
+  ],
+  "valid_pixel_fraction": 0.0598289207175926,
+  "note_monocular_only": "MoGe-2's infer() takes one image and an optional fov_x; it has no pose or depth conditioning input, so per-view depth accuracy is the whole story for this model. Not run through the multi-view reconstruction tables."
+}

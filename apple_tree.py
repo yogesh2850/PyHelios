@@ -141,6 +141,8 @@ if __name__ == "__main__":
                 print(f"  primitives: {len(uuids)}")
                 print(f"  age:        {AGE_DAYS[i]} days")
                 print(f"  extent:     x={x_bounds.y - x_bounds.x:.3f}m, y={y_bounds.y - y_bounds.x:.3f}m, z={z_bounds.y - z_bounds.x:.3f}m")
+                print(f"  center:     x={0.5 * (x_bounds.x + x_bounds.y):.3f}m, y={0.5 * (y_bounds.x + y_bounds.y):.3f}m, z={0.5 * (z_bounds.x + z_bounds.y):.3f}m")
+                print(f"  bounds:     x=[{x_bounds.x:.3f}, {x_bounds.y:.3f}]m, y=[{y_bounds.x:.3f}, {y_bounds.y:.3f}]m, z=[{z_bounds.x:.3f}, {z_bounds.y:.3f}]m")
 
             if "--no-visualization" not in sys.argv:
                 visualize_trees(context, plantarch, plant_ids)
