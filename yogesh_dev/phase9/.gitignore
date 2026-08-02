@@ -1,0 +1,3 @@
+# derived from build_scene.py -- regenerable
+output/trees/tree_*_sem.usd
+output/debug_subset_scene.usda

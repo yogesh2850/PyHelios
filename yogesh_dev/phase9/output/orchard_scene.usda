@@ -1,0 +1,889 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def Xform "Orchard"
+    {
+        def "Tree_r0_c00" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 116.58
+            double3 xformOp:translate = (-31.5, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r0_c01" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 54.31
+            double3 xformOp:translate = (-27, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r0_c02" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 234.34
+            double3 xformOp:translate = (-22.5, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r0_c03" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 26.08
+            double3 xformOp:translate = (-18, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r0_c04" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 192.92
+            double3 xformOp:translate = (-13.5, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r0_c05" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 131.65
+            double3 xformOp:translate = (-9, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r0_c06" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 20.88
+            double3 xformOp:translate = (-4.5, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r0_c07" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 182.68
+            double3 xformOp:translate = (0, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r0_c08" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 13.5
+            double3 xformOp:translate = (4.5, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r0_c09" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 156.11
+            double3 xformOp:translate = (9, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r0_c10" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 25.15
+            double3 xformOp:translate = (13.5, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r0_c11" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 32.66
+            double3 xformOp:translate = (18, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r0_c12" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 152.83
+            double3 xformOp:translate = (22.5, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r0_c13" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 297.67
+            double3 xformOp:translate = (27, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r0_c14" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 44.57
+            double3 xformOp:translate = (31.5, -6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c00" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 80.37
+            double3 xformOp:translate = (-31.5, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c01" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 225.88
+            double3 xformOp:translate = (-27, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c02" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 341.18
+            double3 xformOp:translate = (-22.5, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c03" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 207.76
+            double3 xformOp:translate = (-18, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c04" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 142.8
+            double3 xformOp:translate = (-13.5, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c05" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 351.45
+            double3 xformOp:translate = (-9, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c06" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 16.77
+            double3 xformOp:translate = (-4.5, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c07" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 309.05
+            double3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c08" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 104.26
+            double3 xformOp:translate = (4.5, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c09" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 51.93
+            double3 xformOp:translate = (9, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c10" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 42.41
+            double3 xformOp:translate = (13.5, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c11" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 111.05
+            double3 xformOp:translate = (18, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c12" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 293.81
+            double3 xformOp:translate = (22.5, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c13" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 65.06
+            double3 xformOp:translate = (27, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r1_c14" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 209.38
+            double3 xformOp:translate = (31.5, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c00" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 230.01
+            double3 xformOp:translate = (-31.5, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c01" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 134.06
+            double3 xformOp:translate = (-27, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c02" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 197.19
+            double3 xformOp:translate = (-22.5, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c03" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 22.6
+            double3 xformOp:translate = (-18, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c04" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 21.46
+            double3 xformOp:translate = (-13.5, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c05" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 74.15
+            double3 xformOp:translate = (-9, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c06" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 244.94
+            double3 xformOp:translate = (-4.5, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c07" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 153.93
+            double3 xformOp:translate = (0, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c08" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 113.09
+            double3 xformOp:translate = (4.5, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c09" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 210.8
+            double3 xformOp:translate = (9, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c10" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 163.15
+            double3 xformOp:translate = (13.5, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c11" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 107.92
+            double3 xformOp:translate = (18, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c12" (
+            prepend references = @./trees/tree_00_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 285.98
+            double3 xformOp:translate = (22.5, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c13" (
+            prepend references = @./trees/tree_01_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 251.64
+            double3 xformOp:translate = (27, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "Tree_r2_c14" (
+            prepend references = @./trees/tree_02_sem.usd@
+        )
+        {
+            float xformOp:rotateZ = 87.87
+            double3 xformOp:translate = (31.5, 6, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+    }
+
+    def Mesh "Ground" (
+        prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+    )
+    {
+        uniform bool doubleSided = 1
+        float3[] extent = [(-400, -400, 0), (400, 400, 0)]
+        int[] faceVertexCounts = [4]
+        int[] faceVertexIndices = [0, 1, 2, 3]
+        rel material:binding = </World/Looks/Soil>
+        point3f[] points = [(-400, -400, 0), (400, -400, 0), (400, 400, 0), (-400, 400, 0)]
+        texCoord2f[] primvars:st = [(0, 0), (100, 0), (100, 100), (0, 100)] (
+            interpolation = "vertex"
+        )
+        token[] semantics:labels:class = ["ground"]
+    }
+
+    def "Looks"
+    {
+        def Material "Soil"
+        {
+            token outputs:surface.connect = </World/Looks/Soil/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Looks/Soil/Tex.outputs:rgb>
+                float inputs:metallic = 0
+                float inputs:roughness = 0.95
+                token outputs:surface
+            }
+
+            def Shader "stReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+
+            def Shader "Tex"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @./textures_scene/soil.png@
+                float2 inputs:st.connect = </World/Looks/Soil/stReader.outputs:result>
+                token inputs:wrapS = "repeat"
+                token inputs:wrapT = "repeat"
+                color3f outputs:rgb
+            }
+        }
+
+        def Material "Hills"
+        {
+            token outputs:surface.connect = </World/Looks/Hills/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Looks/Hills/Tex.outputs:rgb>
+                float inputs:metallic = 0
+                float inputs:roughness = 1
+                token outputs:surface
+            }
+
+            def Shader "stReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+
+            def Shader "Tex"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @./textures_scene/hills.png@
+                float2 inputs:st.connect = </World/Looks/Hills/uvScale.outputs:result>
+                token inputs:wrapS = "repeat"
+                token inputs:wrapT = "repeat"
+                color3f outputs:rgb
+            }
+
+            def Shader "uvScale"
+            {
+                uniform token info:id = "UsdTransform2d"
+                float2 inputs:in.connect = </World/Looks/Hills/stReader.outputs:result>
+                float2 inputs:scale = (6, 6)
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Xform "Hills"
+    {
+        def Sphere "Hill_00" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (100.291534, 99.09664, 37.026947)
+            double3 xformOp:translate = (357.7555992551264, 10.901658728684916, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_01" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (107.44149, 147.32677, 32.82609)
+            double3 xformOp:translate = (300.3762661543124, 144.4394098171827, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_02" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (95.1083, 126.37329, 28.933426)
+            double3 xformOp:translate = (244.70864025512196, 238.2763927715464, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_03" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (144.68718, 139.9802, 39.082203)
+            double3 xformOp:translate = (140.45248944727388, 323.044680069178, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_04" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (133.365, 158.10728, 43.59767)
+            double3 xformOp:translate = (27.11522354774218, 357.61189421307955, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_05" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (110.265915, 139.97664, 39.581623)
+            double3 xformOp:translate = (-114.54312733543446, 350.1262635154557, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_06" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (140.77643, 158.73668, 33.44707)
+            double3 xformOp:translate = (-278.9742817897534, 250.10753495205856, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_07" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (129.8302, 149.62827, 32.334896)
+            double3 xformOp:translate = (-300.1988277007369, 139.34607923945265, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_08" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (167.73691, 127.91189, 41.017235)
+            double3 xformOp:translate = (-328.88428627622784, -9.36751690066469, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_09" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (120.661026, 98.84795, 32.47224)
+            double3 xformOp:translate = (-332.62957861731473, -152.01122960051262, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_10" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (169.39563, 114.72218, 39.99775)
+            double3 xformOp:translate = (-249.83939108108638, -236.93671662896844, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_11" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (117.73673, 109.39039, 31.030416)
+            double3 xformOp:translate = (-152.95299712477814, -320.6330462281108, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_12" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (131.45403, 154.28767, 33.58522)
+            double3 xformOp:translate = (24.159061453499586, -353.56368715979966, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_13" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (147.47556, 127.34314, 26.803123)
+            double3 xformOp:translate = (107.29783112574002, -311.3752211578315, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_14" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (152.6219, 115.347664, 39.161682)
+            double3 xformOp:translate = (255.22083877468424, -220.28528882168055, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_15" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (147.02678, 113.36227, 31.992281)
+            double3 xformOp:translate = (299.9084531899096, -122.71524234303573, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_16" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (125.76001, 143.78569, 56.997337)
+            double3 xformOp:translate = (506.73759308958375, 22.702007139453862, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_17" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (169.51736, 101.51254, 63.36351)
+            double3 xformOp:translate = (376.85472598193667, 235.4368913114339, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_18" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (159.89575, 149.97186, 43.372692)
+            double3 xformOp:translate = (253.092938991413, 358.6614754754217, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_19" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (164.84322, 157.72841, 67.18697)
+            double3 xformOp:translate = (20.05750956277706, 437.21695118320747, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_20" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (92.625145, 94.5264, 50.53157)
+            double3 xformOp:translate = (-258.6527123661134, 407.86639829019447, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_21" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (125.416405, 109.9349, 62.20481)
+            double3 xformOp:translate = (-432.40325574593055, 240.437785005652, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_22" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (134.96954, 113.19188, 66.37157)
+            double3 xformOp:translate = (-466.80808067734245, -44.31159087716359, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_23" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (107.48522, 144.03313, 57.56985)
+            double3 xformOp:translate = (-434.7935653247753, -209.76940646079692, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_24" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (162.57126, 126.069695, 40.528133)
+            double3 xformOp:translate = (-208.9769491263054, -426.55545718566924, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_25" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (155.79416, 156.22923, 44.419342)
+            double3 xformOp:translate = (48.71242508722643, -487.7774936734172, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_26" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (114.71752, 102.80665, 56.902092)
+            double3 xformOp:translate = (248.4543807717924, -361.5935499775732, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Sphere "Hill_27" (
+            prepend apiSchemas = ["MaterialBindingAPI", "SemanticsLabelsAPI:class"]
+        )
+        {
+            float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+            rel material:binding = </World/Looks/Hills>
+            double radius = 1
+            token[] semantics:labels:class = ["hill"]
+            float3 xformOp:scale = (136.34056, 102.913124, 56.867718)
+            double3 xformOp:translate = (372.8442730663515, -248.88252807739536, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+    }
+
+    def DomeLight "SkyLight"
+    {
+        float inputs:intensity = 1000
+        asset inputs:texture:file = @./textures_scene/sky_latlong.png@
+        token inputs:texture:format = "latlong"
+    }
+
+    def DistantLight "Sun"
+    {
+        float inputs:angle = 0.53
+        float inputs:intensity = 3000
+        float3 xformOp:rotateXYZ = (-45, 0, 25)
+        uniform token[] xformOpOrder = ["xformOp:rotateXYZ"]
+    }
+}
+

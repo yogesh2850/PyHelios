@@ -1,0 +1,13 @@
+{
+ "scene": "/home/yogesh/PyHelios/yogesh_dev/phase9/output/orchard_scene.usda",
+ "errors": [],
+ "n_trees": 45,
+ "n_hills": 28,
+ "label_counts": {
+  "shoot": 45,
+  "fruit": 45,
+  "leaf": 45,
+  "ground": 1,
+  "hill": 28
+ }
+}
