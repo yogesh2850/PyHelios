@@ -33,6 +33,7 @@ def grab(path, variant="full"):
 
 
 def main():
+    os.makedirs(os.path.dirname(MSG), exist_ok=True)
     r2, r1 = grab(W6_R2), grab(W6_R1)
     r2_base = grab(W6_R2, "copy_last")
     try:
