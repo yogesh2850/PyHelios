@@ -1,0 +1,66 @@
+
+=== r2_final ===
+  ckpt=yogesh_dev/world_model/output/train/r2_final/ckpt_best.pt step=26000 image_size=64
+  base age 545 d; candidate dt -> target stage: 5d->550d, 10d->555d, 15d->560d, 20d->565d, 25d->570d, 35d->580d
+  64 growth episodes x 8 stages at 64x64
+  [G1] dt response: predictions for dt=5d and dt=35d differ by RMS 0.05654; the ground-truth frames differ by 0.14391 => 39.3% of real growth change
+  [G2] dt identification accuracy 16.7% (chance 16.7%) over all 6 candidates
+       rows = dt asked for, cols = nearest ground-truth age
+            550    555    560    565    570    580
+     5d      61      3      0      0      0      0
+    10d      61      3      0      0      0      0
+    15d      61      3      0      0      0      0
+    20d      62      2      0      0      0      0
+    25d      63      1      0      0      0      0
+    35d      62      2      0      0      0      0
+  [G3]   dt  target |    PSNR    copy |  depthMAE    copy |   mIoU   copy
+          5     550 |   20.23   21.05 |     1.118   0.259 |  0.312  0.733
+         10     555 |   19.53   19.57 |     1.197   0.451 |  0.307  0.615
+         15     560 |   18.57   18.48 |     1.334   0.590 |  0.295  0.559
+         20     565 |   17.83   17.61 |     1.418   0.699 |  0.287  0.503
+         25     570 |   17.04   16.87 |     1.520   0.785 |  0.276  0.466
+         35     580 |   16.24   16.11 |     1.673   0.875 |  0.262  0.438
+
+=== r2_growth ===
+  ckpt=yogesh_dev/world_model/output/train/r2_growth/ckpt_best.pt step=32000 image_size=64
+  base age 545 d; candidate dt -> target stage: 5d->550d, 10d->555d, 15d->560d, 20d->565d, 25d->570d, 35d->580d
+  64 growth episodes x 8 stages at 64x64
+  [G1] dt response: predictions for dt=5d and dt=35d differ by RMS 0.07674; the ground-truth frames differ by 0.14391 => 53.3% of real growth change
+  [G2] dt identification accuracy 26.0% (chance 16.7%) over all 6 candidates
+       rows = dt asked for, cols = nearest ground-truth age
+            550    555    560    565    570    580
+     5d      53     10      1      0      0      0
+    10d      44     13      6      1      0      0
+    15d      35     17      5      6      0      1
+    20d      30     12      5     15      2      0
+    25d      24     12      7     16      4      1
+    35d      17     14     10      9      4     10
+  [G3]   dt  target |    PSNR    copy |  depthMAE    copy |   mIoU   copy
+          5     550 |   19.97   21.05 |     1.405   0.259 |  0.293  0.733
+         10     555 |   19.47   19.57 |     1.386   0.451 |  0.299  0.615
+         15     560 |   18.91   18.48 |     1.384   0.590 |  0.297  0.559
+         20     565 |   18.66   17.61 |     1.345   0.699 |  0.301  0.503
+         25     570 |   18.27   16.87 |     1.377   0.785 |  0.300  0.466
+         35     580 |   17.94   16.11 |     1.379   0.875 |  0.299  0.438
+
+=== r3_final ===
+  ckpt=yogesh_dev/world_model/output/train/r3_final/ckpt_best.pt step=37000 image_size=128
+  base age 545 d; candidate dt -> target stage: 5d->550d, 10d->555d, 15d->560d, 20d->565d, 25d->570d, 35d->580d
+  64 growth episodes x 8 stages at 128x128
+  [G1] dt response: predictions for dt=5d and dt=35d differ by RMS 0.08319; the ground-truth frames differ by 0.14387 => 57.8% of real growth change
+  [G2] dt identification accuracy 23.7% (chance 16.7%) over all 6 candidates
+       rows = dt asked for, cols = nearest ground-truth age
+            550    555    560    565    570    580
+     5d      61      3      0      0      0      0
+    10d      51     10      2      1      0      0
+    15d      40     17      7      0      0      0
+    20d      24     16     17      6      0      1
+    25d      19     14      7     19      4      1
+    35d       7     17      9     17     11      3
+  [G3]   dt  target |    PSNR    copy |  depthMAE    copy |   mIoU   copy
+          5     550 |   20.48   21.04 |     0.955   0.256 |  0.301  0.745
+         10     555 |   19.90   19.56 |     0.955   0.445 |  0.308  0.631
+         15     560 |   19.46   18.46 |     0.945   0.581 |  0.311  0.567
+         20     565 |   19.16   17.59 |     0.911   0.689 |  0.316  0.515
+         25     570 |   18.89   16.85 |     0.924   0.777 |  0.319  0.473
+         35     580 |   18.54   16.11 |     0.918   0.867 |  0.318  0.439

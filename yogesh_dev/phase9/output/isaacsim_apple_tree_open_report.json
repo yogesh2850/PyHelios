@@ -1,0 +1,19 @@
+{
+  "usd": "/home/yogesh/PyHelios/yogesh_dev/phase9/output/apple_tree.usda",
+  "opened": true,
+  "roundtrip_ok": true,
+  "errors": [],
+  "added_lights": [
+    "/World/DomeLight",
+    "/World/SunLight"
+  ],
+  "pxr_num_points": 24957,
+  "pxr_num_faces": 8319,
+  "mesh_path": "/World/apple_tree",
+  "up_axis": "Z",
+  "meters_per_unit": 1.0,
+  "export_num_points": 24957,
+  "export_num_faces": 8319,
+  "render_dir": "/home/yogesh/PyHelios/yogesh_dev/phase9/output",
+  "screenshot_hint": "BasicWriter wrote rgb_*.png in render_dir"
+}

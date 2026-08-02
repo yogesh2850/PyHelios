@@ -1,0 +1,40 @@
+{
+  "out": "/home/yogesh/PyHelios/yogesh_dev/phase9/output/apple_tree.usda",
+  "size_mb": 1.159,
+  "n_trees": 1,
+  "age_days": 365.0,
+  "seed": 9001,
+  "num_points": 24957,
+  "num_faces": 8319,
+  "num_colors": 8319,
+  "bbox_m": {
+    "x": [
+      -0.7964663505554199,
+      0.7310636639595032
+    ],
+    "y": [
+      -0.7278317213058472,
+      0.7106357216835022
+    ],
+    "z": [
+      -0.00043511055991984904,
+      2.033210277557373
+    ]
+  },
+  "timing_s": {
+    "build": 0.27,
+    "extract": 0.04,
+    "write": 0.01
+  },
+  "geometry_stats": {
+    "primitives": 8319,
+    "triangles_from_tri": 8319,
+    "triangles_from_quad": 0,
+    "skipped_degenerate": 0,
+    "real_color": 1110,
+    "fallback_color": 7209,
+    "vertex_count_histogram": {
+      "3": 8319
+    }
+  }
+}

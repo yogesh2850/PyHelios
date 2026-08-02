@@ -1,0 +1,39 @@
+{
+  "usd": "/home/yogesh/PyHelios/yogesh_dev/phase9/output/test_tree.usda",
+  "opened": true,
+  "roundtrip_ok": true,
+  "errors": [],
+  "up_axis": "Z",
+  "meters_per_unit": 1.0,
+  "added_lights": [
+    "/World/DomeLight",
+    "/World/SunLight"
+  ],
+  "pxr_num_points": 24957,
+  "pxr_num_faces": 8319,
+  "pxr_num_meshes": 1,
+  "materials": [
+    "/AppleTree/Looks/AppleBark",
+    "/AppleTree/Looks/AppleFruit",
+    "/AppleTree/Looks/AppleLeaf"
+  ],
+  "textures": [
+    {
+      "path": "./textures/AppleBark.jpg",
+      "exists": true
+    },
+    {
+      "path": "./textures/AppleFruit.jpg",
+      "exists": true
+    },
+    {
+      "path": "./textures/AppleLeaf.png",
+      "exists": true
+    }
+  ],
+  "textures_all_exist": true,
+  "export_num_points": 24957,
+  "export_num_faces": 8319,
+  "render_dir": "/home/yogesh/PyHelios/yogesh_dev/phase9/output",
+  "screenshot_hint": "BasicWriter wrote rgb_*.png in render_dir"
+}

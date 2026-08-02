@@ -1,0 +1,84 @@
+loaded yogesh_dev/world_model/output/train/r3_final/ckpt_best.pt (step 37000, image_size 128)
+no-action ABLATION MODEL NOT PROVIDED -- reporting the eval-time zero_action variant only, which is a weaker control
+
+view episodes: {'split': 'test', 'n_view_episodes': 96, 'n_growth_episodes': 64, 'n_frames': 12800, 'growth_fraction_requested': 0.0, 'growth_fraction_realised': None, 'growth_subsample': False, 'growth_dt_histogram': {}}
+
+=== R1/R2/R4  VIEW CHANNEL (open-loop rollout) ===
+  t+1
+    full             PSNR= 18.62dB  SSIM=0.5477  depthMAE= 0.751m  mIoU=0.2870  fruitMAE=0.0029
+    zero_action      PSNR= 18.53dB  SSIM=0.5460  depthMAE= 0.766m  mIoU=0.2833  fruitMAE=0.0025
+    shuffled_action  PSNR= 18.50dB  SSIM=0.5455  depthMAE= 0.788m  mIoU=0.2817  fruitMAE=0.0028
+    copy_last        PSNR= 16.73dB  SSIM=0.5448  depthMAE= 0.653m  mIoU=0.3214  fruitMAE=0.0016
+  t+5
+    full             PSNR= 18.29dB  SSIM=0.5433  depthMAE= 0.868m  mIoU=0.2713  fruitMAE=0.0050
+    zero_action      PSNR= 18.12dB  SSIM=0.5400  depthMAE= 0.921m  mIoU=0.2651  fruitMAE=0.0038
+    shuffled_action  PSNR= 18.11dB  SSIM=0.5395  depthMAE= 0.927m  mIoU=0.2633  fruitMAE=0.0037
+    copy_last        PSNR= 15.63dB  SSIM=0.4660  depthMAE= 0.965m  mIoU=0.2545  fruitMAE=0.0039
+  t+10
+    full             PSNR= 18.05dB  SSIM=0.5387  depthMAE= 0.937m  mIoU=0.2619  fruitMAE=0.0058
+    zero_action      PSNR= 17.75dB  SSIM=0.5337  depthMAE= 1.031m  mIoU=0.2493  fruitMAE=0.0059
+    shuffled_action  PSNR= 17.76dB  SSIM=0.5334  depthMAE= 1.050m  mIoU=0.2478  fruitMAE=0.0065
+    copy_last        PSNR= 15.39dB  SSIM=0.4471  depthMAE= 1.092m  mIoU=0.2385  fruitMAE=0.0057
+  t+25
+    full             PSNR= 17.53dB  SSIM=0.5276  depthMAE= 1.103m  mIoU=0.2379  fruitMAE=0.0078
+    zero_action      PSNR= 17.29dB  SSIM=0.5227  depthMAE= 1.170m  mIoU=0.2320  fruitMAE=0.0067
+    shuffled_action  PSNR= 17.25dB  SSIM=0.5223  depthMAE= 1.222m  mIoU=0.2294  fruitMAE=0.0081
+    copy_last        PSNR= 15.16dB  SSIM=0.4338  depthMAE= 1.200m  mIoU=0.2273  fruitMAE=0.0074
+
+=== R2b  ACTION SENSITIVITY (how far the prediction moves when the action changes) ===
+  t+1   zeroed-vs-true RMS=0.03602 (23.42% of real motion)   negated-vs-true RMS=0.03773 (24.55%)   real motion RMS=0.15421
+  t+5   zeroed-vs-true RMS=0.05424 (31.15% of real motion)   negated-vs-true RMS=0.05557 (31.97%)   real motion RMS=0.17476
+  t+10  zeroed-vs-true RMS=0.06265 (34.17% of real motion)   negated-vs-true RMS=0.06984 (38.09%)   real motion RMS=0.18346
+  t+25  zeroed-vs-true RMS=0.07616 (40.77% of real motion)   negated-vs-true RMS=0.08522 (45.61%)   real motion RMS=0.18686
+
+growth episodes: {'split': 'test', 'n_view_episodes': 96, 'n_growth_episodes': 64, 'n_frames': 12800, 'growth_fraction_requested': 1.0, 'growth_fraction_realised': None, 'growth_subsample': False, 'growth_dt_histogram': {}} (n_stages=8, context=2, horizons=(1, 2, 3, 5))
+
+=== R3  GROWTH CHANNEL (counterfactual advanceTime) ===
+  t+1
+    full             PSNR= 20.47dB  SSIM=0.6990  depthMAE= 0.935m  mIoU=0.3023  fruitMAE=0.0016
+    zero_action      PSNR= 20.39dB  SSIM=0.7024  depthMAE= 1.006m  mIoU=0.2939  fruitMAE=0.0020
+    shuffled_action  PSNR= 20.46dB  SSIM=0.6986  depthMAE= 0.953m  mIoU=0.3007  fruitMAE=0.0013
+    copy_last        PSNR= 20.97dB  SSIM=0.8094  depthMAE= 0.256m  mIoU=0.7442  fruitMAE=0.0025
+  t+2
+    full             PSNR= 19.89dB  SSIM=0.6678  depthMAE= 0.929m  mIoU=0.3060  fruitMAE=0.0025
+    zero_action      PSNR= 19.47dB  SSIM=0.6728  depthMAE= 1.093m  mIoU=0.2882  fruitMAE=0.0046
+    shuffled_action  PSNR= 19.84dB  SSIM=0.6676  depthMAE= 0.964m  mIoU=0.3036  fruitMAE=0.0021
+    copy_last        PSNR= 19.49dB  SSIM=0.7634  depthMAE= 0.445m  mIoU=0.6306  fruitMAE=0.0054
+  t+3
+    full             PSNR= 19.41dB  SSIM=0.6392  depthMAE= 0.927m  mIoU=0.3085  fruitMAE=0.0031
+    zero_action      PSNR= 18.62dB  SSIM=0.6451  depthMAE= 1.154m  mIoU=0.2821  fruitMAE=0.0079
+    shuffled_action  PSNR= 19.36dB  SSIM=0.6395  depthMAE= 0.964m  mIoU=0.3060  fruitMAE=0.0030
+    copy_last        PSNR= 18.39dB  SSIM=0.7248  depthMAE= 0.581m  mIoU=0.5651  fruitMAE=0.0088
+  t+5
+    full             PSNR= 18.70dB  SSIM=0.5997  depthMAE= 0.931m  mIoU=0.3102  fruitMAE=0.0044
+    zero_action      PSNR= 17.14dB  SSIM=0.6035  depthMAE= 1.270m  mIoU=0.2672  fruitMAE=0.0153
+    shuffled_action  PSNR= 18.68dB  SSIM=0.6002  depthMAE= 0.973m  mIoU=0.3095  fruitMAE=0.0041
+    copy_last        PSNR= 16.81dB  SSIM=0.6691  depthMAE= 0.774m  mIoU=0.4721  fruitMAE=0.0161
+
+=== ACCEPTANCE ===
+{
+  "t+1": {
+    "full_beats_copy_last_psnr": true,
+    "full_beats_zero_action_psnr": true,
+    "full_beats_shuffled_action_psnr": true
+  },
+  "t+5": {
+    "full_beats_copy_last_psnr": true,
+    "full_beats_zero_action_psnr": true,
+    "full_beats_shuffled_action_psnr": true
+  },
+  "t+10": {
+    "full_beats_copy_last_psnr": true,
+    "full_beats_zero_action_psnr": true,
+    "full_beats_shuffled_action_psnr": true
+  },
+  "t+25": {
+    "full_beats_copy_last_psnr": true,
+    "full_beats_zero_action_psnr": true,
+    "full_beats_shuffled_action_psnr": true
+  }
+}
+
+wrote 2 qualitative rollout strips (top row = Helios ground truth at t+[1, 5, 10, 25], bottom = model imagination)
+
+Wrote yogesh_dev/world_model/output/r3_w6_final/w6_results.json

@@ -1,0 +1,51 @@
+{
+  "out": "/home/yogesh/PyHelios/yogesh_dev/phase9/output/orchard.usda",
+  "orchard_size_mb": 0.0135,
+  "unique_trees_total_mb": 200.05,
+  "n_instances": 45,
+  "rows": 3,
+  "per_row": 15,
+  "in_row_spacing_m": 4.5,
+  "row_spacing_m": 6.0,
+  "row_length_m": 63.0,
+  "block_width_m": 12.0,
+  "age_days": 1825.0,
+  "growth_phase": "fully_grown",
+  "n_unique_prototypes": 3,
+  "per_tree_num_points": 812655,
+  "per_tree_num_faces": 270885,
+  "total_num_points": 47773215,
+  "total_num_faces": 15924405,
+  "unique_trees": [
+    {
+      "file": "trees/tree_00.usda",
+      "root": "AppleTree",
+      "num_points": 812655,
+      "num_faces": 270885,
+      "seed": 9001,
+      "build_export_s": 29.77,
+      "size_mb": 50.83
+    },
+    {
+      "file": "trees/tree_01.usda",
+      "root": "AppleTree",
+      "num_points": 1235568,
+      "num_faces": 411856,
+      "seed": 9002,
+      "build_export_s": 55.13,
+      "size_mb": 77.79
+    },
+    {
+      "file": "trees/tree_02.usda",
+      "root": "AppleTree",
+      "num_points": 1136658,
+      "num_faces": 378886,
+      "seed": 9003,
+      "build_export_s": 43.84,
+      "size_mb": 71.43
+    }
+  ],
+  "timing_s": {
+    "build_export_all_trees": 128.86
+  }
+}

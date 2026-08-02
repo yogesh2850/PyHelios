@@ -1,0 +1,49 @@
+{
+  "out": "yogesh_dev/phase9/output/test_tree.usda",
+  "size_mb": 1.54,
+  "age_days": 365.0,
+  "seed": 9001,
+  "num_points": 24957,
+  "num_faces": 8319,
+  "textures": [
+    "AppleBark.jpg",
+    "AppleFruit.jpg",
+    "AppleLeaf.png"
+  ],
+  "bbox_m": {
+    "x": [
+      -0.8074951171875,
+      0.7573297023773193
+    ],
+    "y": [
+      -0.7294681072235107,
+      0.768528938293457
+    ],
+    "z": [
+      -0.00043511114199645817,
+      2.0278208255767822
+    ]
+  },
+  "timing_s": {
+    "build": 0.47,
+    "extract": 0.03,
+    "write": 0.02
+  },
+  "geometry_stats": {
+    "primitives": 8319,
+    "tris_from_tri": 8319,
+    "tris_from_quad": 0,
+    "skipped": 0,
+    "textured_faces": 7139,
+    "untextured_faces": 1180,
+    "vertex_hist": {
+      "3": 8319
+    },
+    "faces_per_texture": {
+      "AppleBark.jpg": 4074,
+      "AppleFruit.jpg": 1030,
+      "(untextured)": 1180,
+      "AppleLeaf.png": 2035
+    }
+  }
+}

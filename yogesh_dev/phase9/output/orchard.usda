@@ -1,0 +1,415 @@
+#usda 1.0
+(
+    defaultPrim = "Orchard"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Orchard"
+{
+    def "Tree_r0_c00" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-31.5000, -6.0000, 0)
+        float xformOp:rotateZ = 116.58
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r0_c01" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-27.0000, -6.0000, 0)
+        float xformOp:rotateZ = 54.31
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r0_c02" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-22.5000, -6.0000, 0)
+        float xformOp:rotateZ = 234.34
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r0_c03" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-18.0000, -6.0000, 0)
+        float xformOp:rotateZ = 26.08
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r0_c04" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-13.5000, -6.0000, 0)
+        float xformOp:rotateZ = 192.92
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r0_c05" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-9.0000, -6.0000, 0)
+        float xformOp:rotateZ = 131.65
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r0_c06" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-4.5000, -6.0000, 0)
+        float xformOp:rotateZ = 20.88
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r0_c07" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (0.0000, -6.0000, 0)
+        float xformOp:rotateZ = 182.68
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r0_c08" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (4.5000, -6.0000, 0)
+        float xformOp:rotateZ = 13.50
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r0_c09" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (9.0000, -6.0000, 0)
+        float xformOp:rotateZ = 156.11
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r0_c10" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (13.5000, -6.0000, 0)
+        float xformOp:rotateZ = 25.15
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r0_c11" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (18.0000, -6.0000, 0)
+        float xformOp:rotateZ = 32.66
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r0_c12" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (22.5000, -6.0000, 0)
+        float xformOp:rotateZ = 152.83
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r0_c13" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (27.0000, -6.0000, 0)
+        float xformOp:rotateZ = 297.67
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r0_c14" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (31.5000, -6.0000, 0)
+        float xformOp:rotateZ = 44.57
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c00" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-31.5000, 0.0000, 0)
+        float xformOp:rotateZ = 80.37
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c01" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-27.0000, 0.0000, 0)
+        float xformOp:rotateZ = 225.88
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c02" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-22.5000, 0.0000, 0)
+        float xformOp:rotateZ = 341.18
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c03" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-18.0000, 0.0000, 0)
+        float xformOp:rotateZ = 207.76
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c04" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-13.5000, 0.0000, 0)
+        float xformOp:rotateZ = 142.80
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c05" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-9.0000, 0.0000, 0)
+        float xformOp:rotateZ = 351.45
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c06" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-4.5000, 0.0000, 0)
+        float xformOp:rotateZ = 16.77
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c07" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (0.0000, 0.0000, 0)
+        float xformOp:rotateZ = 309.05
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c08" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (4.5000, 0.0000, 0)
+        float xformOp:rotateZ = 104.26
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c09" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (9.0000, 0.0000, 0)
+        float xformOp:rotateZ = 51.93
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c10" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (13.5000, 0.0000, 0)
+        float xformOp:rotateZ = 42.41
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c11" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (18.0000, 0.0000, 0)
+        float xformOp:rotateZ = 111.05
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c12" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (22.5000, 0.0000, 0)
+        float xformOp:rotateZ = 293.81
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c13" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (27.0000, 0.0000, 0)
+        float xformOp:rotateZ = 65.06
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r1_c14" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (31.5000, 0.0000, 0)
+        float xformOp:rotateZ = 209.38
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c00" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-31.5000, 6.0000, 0)
+        float xformOp:rotateZ = 230.01
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c01" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-27.0000, 6.0000, 0)
+        float xformOp:rotateZ = 134.06
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c02" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-22.5000, 6.0000, 0)
+        float xformOp:rotateZ = 197.19
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c03" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-18.0000, 6.0000, 0)
+        float xformOp:rotateZ = 22.60
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c04" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-13.5000, 6.0000, 0)
+        float xformOp:rotateZ = 21.46
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c05" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-9.0000, 6.0000, 0)
+        float xformOp:rotateZ = 74.15
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c06" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (-4.5000, 6.0000, 0)
+        float xformOp:rotateZ = 244.94
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c07" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (0.0000, 6.0000, 0)
+        float xformOp:rotateZ = 153.93
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c08" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (4.5000, 6.0000, 0)
+        float xformOp:rotateZ = 113.09
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c09" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (9.0000, 6.0000, 0)
+        float xformOp:rotateZ = 210.80
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c10" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (13.5000, 6.0000, 0)
+        float xformOp:rotateZ = 163.15
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c11" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (18.0000, 6.0000, 0)
+        float xformOp:rotateZ = 107.92
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c12" (
+        prepend references = @./trees/tree_00.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (22.5000, 6.0000, 0)
+        float xformOp:rotateZ = 285.98
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c13" (
+        prepend references = @./trees/tree_01.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (27.0000, 6.0000, 0)
+        float xformOp:rotateZ = 251.64
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+    def "Tree_r2_c14" (
+        prepend references = @./trees/tree_02.usda@
+        instanceable = true
+    )
+    {
+        double3 xformOp:translate = (31.5000, 6.0000, 0)
+        float xformOp:rotateZ = 87.87
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+    }
+}
