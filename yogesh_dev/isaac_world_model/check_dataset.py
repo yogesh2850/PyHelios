@@ -5,15 +5,22 @@ GPU-hours on training: schema/dtype/shape of every field, manifest counts,
 action convention (a_view replays states), class coverage, and one real
 SequenceSampler batch.
 """
+import argparse
 import json
 import os
 import sys
 
 import numpy as np
 
-ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                    "..", "world_model", "output", "dataset_isaac")
-ROOT = os.path.normpath(ROOT)
+_DEFAULT_ROOT = os.path.normpath(os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),
+    "..", "world_model", "output", "dataset_isaac"))
+_ap = argparse.ArgumentParser()
+_ap.add_argument("--root", default=_DEFAULT_ROOT)
+_ap.add_argument("--res", type=int, default=128,
+                 help="expected stored square resolution")
+_args = _ap.parse_args()
+ROOT, RES = _args.root, _args.res
 
 errors = []
 
@@ -30,8 +37,8 @@ check(len(eps) == 48, f"episode count {len(eps)} != 48")
 by_split = {s: sum(1 for e in eps if e["split"] == s) for s in ("train", "val", "test")}
 check(by_split == {"train": 40, "val": 4, "test": 4}, f"splits {by_split}")
 
-want = {"rgb": (np.uint8, (32, 128, 128, 3)), "depth": (np.float16, (32, 128, 128)),
-        "semantic": (np.uint8, (32, 128, 128)), "instance": (np.int32, (32, 128, 128)),
+want = {"rgb": (np.uint8, (32, RES, RES, 3)), "depth": (np.float16, (32, RES, RES)),
+        "semantic": (np.uint8, (32, RES, RES)), "instance": (np.int32, (32, RES, RES)),
         "pose": (np.float32, (32, 4, 4)), "state": (np.float32, (32, 4)),
         "a_view": (np.float32, (32, 4)), "a_grow": (np.float32, (32, 1)),
         "fruit_vis": (np.float32, (32,)), "age_days": (np.float32, (32,))}
@@ -69,11 +76,11 @@ for c, name, lo in ((0, "ground/other", 0.05), (1, "fruit", 0.0005),
 sys.path.insert(0, os.path.normpath(os.path.join(ROOT, "..", "..", "..", "..")))
 from yogesh_dev.world_model.data import SequenceSampler  # noqa: E402
 
-smp = SequenceSampler(ROOT, "train", seq_len=32, image_size=128, growth_fraction=0.0)
+smp = SequenceSampler(ROOT, "train", seq_len=32, image_size=RES, growth_fraction=0.0)
 b = smp.sample_batch(4)
 print("sample_batch shapes:", {k: tuple(v.shape) for k, v in b.items()})
 check(b["action"].shape == (4, 32, 5), f"action shape {b['action'].shape}")
-check(b["rgb"].shape == (4, 32, 128, 128, 3), f"rgb batch shape {b['rgb'].shape}")
+check(b["rgb"].shape == (4, 32, RES, RES, 3), f"rgb batch shape {b['rgb'].shape}")
 
 if errors:
     print(f"DATASET_CHECK_FAIL ({len(errors)} errors)")

@@ -43,7 +43,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SCENE = os.path.normpath(os.path.join(HERE, "..", "phase9", "output", "orchard_scene.usda"))
 DATA_OUT = os.path.normpath(os.path.join(HERE, "..", "world_model", "output", "dataset_isaac"))
 
-RENDER_RES = 256
+RENDER_RES = 256   # defaults; overridable via --render-res / --out-res
 OUT_RES = 128
 N_STEPS = 32
 CAM_Z = 1.2
@@ -268,7 +268,8 @@ class Rig:
 
 
 def downsample(f):
-    """256 -> 128: area-mean rgb, nearest for labels/depth/instance."""
+    """RENDER_RES -> OUT_RES: area-mean rgb (supersampled AA), nearest for
+    labels/depth/instance."""
     k = RENDER_RES // OUT_RES
     rgb = f["rgb"].reshape(OUT_RES, k, OUT_RES, k, 3).mean(axis=(1, 3))
     return {"rgb": np.clip(rgb + 0.5, 0, 255).astype(np.uint8),
@@ -432,12 +433,21 @@ def run_full(rig, out_root):
 
 
 def main():
+    global RENDER_RES, OUT_RES
     ap = argparse.ArgumentParser()
     ap.add_argument("--scene", default=SCENE)
     ap.add_argument("--out", default=DATA_OUT)
     ap.add_argument("--smoke", action="store_true")
     ap.add_argument("--rt-subframes", type=int, default=16)
+    ap.add_argument("--render-res", type=int, default=RENDER_RES,
+                    help="square render resolution (supersampled source)")
+    ap.add_argument("--out-res", type=int, default=OUT_RES,
+                    help="square stored resolution; must divide --render-res")
     args = ap.parse_args()
+    if args.render_res % args.out_res != 0:
+        ap.error(f"--render-res {args.render_res} must be a multiple of "
+                 f"--out-res {args.out_res}")
+    RENDER_RES, OUT_RES = args.render_res, args.out_res
 
     rig = Rig(args.scene, RENDER_RES, args.rt_subframes)
     try:
